@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
+    [SerializeField] private Collider col;
+
     [SerializeField] private Rigidbody rb;
+
     [SerializeField] private float force;
 
     private bool shoot;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetMouseButtonDown(0))
         {
-            shoot = true;
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if(Physics.Raycast(ray, out var hitInfo))
+            {
+                if(hitInfo.collider == col)
+                    shoot = true;
+            }
         }
     }
 
