@@ -12,6 +12,8 @@ public class PlayManager : MonoBehaviour
 
     private bool isBallTeleporting;
 
+    private bool isGoal;
+
     private Vector3 lastBallPosition;
 
     private void Update()
@@ -25,16 +27,31 @@ public class PlayManager : MonoBehaviour
         camController.SetInputActive(inputAction);
     }
 
+    public void OnBallGoalEnter()
+    {
+        isGoal = true;
+        ballController.enabled = false;
+        // TODO player win window up
+    }
+
     public void OnBallOutside()
     {
+        if (isGoal)
+            return;
+
         if(isBallTeleporting == false)
-            Invoke("MoveBallLastPosition", 1);
+            Invoke("TeleportBallLastPosition", 1);
 
         isBallOutside = true;
         isBallTeleporting = true;
     }
 
-    public void MoveBallLastPosition()
+    public void TeleportBallLastPosition()
+    {
+        TeleportBall(lastBallPosition);
+    }
+
+    public void TeleportBall (Vector3 targetPosition)
     {
         var rb = ballController.GetComponent<Rigidbody>();
         rb.isKinematic = true;
