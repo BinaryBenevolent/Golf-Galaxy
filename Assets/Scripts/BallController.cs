@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class BallController : MonoBehaviour
+public class BallController : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private Collider col;
 
@@ -14,16 +15,7 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if(Physics.Raycast(ray, out var hitInfo))
-            {
-                if(hitInfo.collider == col)
-                    shoot = true;
-            }
-        }
+        
     }
 
     private void FixedUpdate()
@@ -31,14 +23,13 @@ public class BallController : MonoBehaviour
         if(shoot)
         {
             shoot = false;
-
             Vector3 direction = Camera.main.transform.forward;
             direction.y = 0;
 
             rb.AddForce(direction * force, ForceMode.Impulse);
         }
 
-        if(rb.velocity.sqrMagnitude < 0.05f && rb.velocity.sqrMagnitude > 0f)
+        if(rb.velocity.sqrMagnitude < 0.2f && rb.velocity.sqrMagnitude > 0f)
         {
             rb.velocity = Vector3.zero;
         }
@@ -47,5 +38,11 @@ public class BallController : MonoBehaviour
     public bool IsMove()
     {
         return rb.velocity != Vector3.zero;
+    }
+
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    {
+        if(IsMove() == false)
+            shoot = true;
     }
 }
