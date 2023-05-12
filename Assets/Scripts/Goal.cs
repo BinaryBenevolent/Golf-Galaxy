@@ -6,7 +6,7 @@ public class Goal : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Ball")
+        if(other.CompareTag("Ball"))
         {
             Debug.Log("Goal");
         }
