@@ -11,7 +11,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
 
     [SerializeField] private float force;
 
-    //[SerializeField] private LineRenderer aimLine;
+    [SerializeField] private LineRenderer aimLine;
 
     [SerializeField] private Transform aimWorld;
 
@@ -26,6 +26,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
     private Plane plane;
 
     public bool IsShootingMode { get => isShootingMode; }
+    public float ForceFactor { get => forceFactor; }
 
     private void Update()
     {
@@ -33,7 +34,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
         {
             if(Input.GetMouseButtonDown(0))
             {
-                //aimLine.gameObject.SetActive(true);
+                aimLine.gameObject.SetActive(true);
                 aimWorld.gameObject.SetActive(true);
                 plane = new Plane(Vector3.up, this.transform.position);
             }
@@ -41,12 +42,8 @@ public class BallController : MonoBehaviour, IPointerDownHandler
             {
                 var mouseViewportPos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
                 var ballViewportPos = Camera.main.WorldToViewportPoint(this.transform.position);
-                var ballScreenPos = Camera.main.WorldToScreenPoint(this.transform.position);
                 var pointerDirection = ballViewportPos - mouseViewportPos;
-                pointerDirection.z = 0;
-
-                //var positions = new Vector3[] { ballScreenPos, Input.mousePosition };
-                //aimLine.SetPositions(positions);            
+                pointerDirection.z = 0;            
 
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -59,13 +56,22 @@ public class BallController : MonoBehaviour, IPointerDownHandler
                 aimWorld.transform.position = this.transform.position;
                 aimWorld.forward = forceDirection;
                 aimWorld.localScale = new Vector3(1, 1, forceFactor + 0.5f);
+
+                var ballScreenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+                var mouseScreenPos = Input.mousePosition;
+
+                ballScreenPos.z = 1f;
+                mouseScreenPos.z = 1f;
+
+                var positions = new Vector3[] { Camera.main.ScreenToWorldPoint(ballScreenPos), Camera.main.ScreenToWorldPoint(mouseScreenPos) };
+                aimLine.SetPositions(positions);
             }
             else if (Input.GetMouseButtonUp(0))
             {
                 shoot = true;
                 isShootingMode = false;
 
-                //aimLine.gameObject.SetActive(false);
+                aimLine.gameObject.SetActive(false);
                 aimWorld.gameObject.SetActive(false);
             }
         }
@@ -80,7 +86,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
             rb.AddForce(forceDirection * force * forceFactor, ForceMode.Impulse);
         }
 
-        if(rb.velocity.sqrMagnitude < 0.2f && rb.velocity.sqrMagnitude > 0f)
+        if(rb.velocity.sqrMagnitude < 0.5f && rb.velocity.sqrMagnitude > 0f)
         {
             rb.velocity = Vector3.zero;
         }
