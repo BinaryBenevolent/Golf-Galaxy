@@ -1,0 +1,641 @@
+fileFormatVersion: 2
+guid: 47136c9e226a50a48a458bead1978d32
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 195
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: options
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 2526
+        width: 187
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34218a15a1d838c4f849cacf22c383fb
+      internalID: 187947004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_35
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2308
+        width: 186
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8309d5a2eae3a2343b5bdc7cb0b181a0
+      internalID: 38473058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: check blue
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 2091
+        width: 187
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86680f8a89918e45893dd52a5e3a689
+      internalID: -1615966893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home_blue
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1875
+        width: 187
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535b5fc9c52d062409db8cdabdc73cef
+      internalID: 781635742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restart green
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 1654
+        width: 185
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8855bc40266d4974f8d919d93785765a
+      internalID: -294275878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_87
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1437
+        width: 185
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aca19a1a40cb14b8f0ffe00a7979cb
+      internalID: 1150162757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgmgreen
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 1001
+        width: 185
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab88d15831792714582eeb4b1f3e5d07
+      internalID: 1310053689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgmwhite
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 1001
+        width: 187
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942bd7748fecc2b41865dd9a15611c20
+      internalID: -1461850343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sfxgreen
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 783
+        width: 185
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09587bad75195c41ba5fb1c0f82e392
+      internalID: -1452421297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sfxwhite
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 783
+        width: 187
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fa56c64036a7743abc70e99a39caf8
+      internalID: 1881501636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause_white
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 565
+        width: 187
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74c7987c72743a469828e51821fa367
+      internalID: 1379680249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2402
+        width: 451
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f8e3b2ef1b18548953bf515ae542f5
+      internalID: 1379512858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonBlue
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2189
+        width: 178
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3795d05368ea4cb41d40c0463f941
+      internalID: 1838372510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: save
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 1231
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ff68a5dc24ba24f9bc34255ac1f5ae
+      internalID: 60304912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c13337fd00882ca4cb21fef144b1b8a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Button_1: 555718810
+      Button_10: 1793839301
+      Button_100: -1056773411
+      Button_101: -572275383
+      Button_102: 308823492
+      Button_103: -646707025
+      Button_104: 2112578822
+      Button_105: -322294123
+      Button_106: 1766775662
+      Button_107: 1584810097
+      Button_108: 564688343
+      Button_109: -969562925
+      Button_11: -803752551
+      Button_110: -713300671
+      Button_111: -386069431
+      Button_112: -1063248969
+      Button_113: -1751617130
+      Button_114: 621153122
+      Button_115: 902185326
+      Button_116: 923907528
+      Button_117: 69224955
+      Button_119: -499030127
+      Button_12: 1399894110
+      Button_121: 2135667360
+      Button_122: 1055205900
+      Button_123: 684581117
+      Button_124: 276024579
+      Button_125: -1116674722
+      Button_126: -1906176777
+      Button_127: 1660716379
+      Button_128: 1236959886
+      Button_129: 579537011
+      Button_13: 1508123496
+      Button_130: 475152262
+      Button_131: -1064130177
+      Button_132: -224627209
+      Button_133: -1676381916
+      Button_135: 1921259486
+      Button_137: 1248443632
+      Button_138: 1106228986
+      Button_139: -1283008161
+      Button_14: -36182567
+      Button_140: -222190474
+      Button_141: 1489835349
+      Button_142: 909012130
+      Button_143: -734152292
+      Button_145: -1360107770
+      Button_146: -92164266
+      Button_147: -1870411887
+      Button_148: -1508783906
+      Button_149: 640917158
+      Button_15: 786166590
+      Button_150: -806414363
+      Button_151: -673839042
+      Button_152: -2097368222
+      Button_153: -2011813283
+      Button_154: -1357429885
+      Button_155: 2043958235
+      Button_156: 2007907129
+      Button_157: 1397301367
+      Button_158: 964151470
+      Button_159: 251491941
+      Button_16: -375438556
+      Button_160: -1043233715
+      Button_161: 1636817434
+      Button_162: 92261669
+      Button_163: 1388647934
+      Button_164: 1999303867
+      Button_165: -894938988
+      Button_166: -1293340160
+      Button_167: -763662488
+      Button_168: -1896412510
+      Button_169: 1293007217
+      Button_17: 2061765248
+      Button_170: 1445739689
+      Button_171: 1392532191
+      Button_172: -285511152
+      Button_173: -811253852
+      Button_174: 204303235
+      Button_175: 1189418803
+      Button_176: 2024470321
+      Button_177: 1304493168
+      Button_178: 1516928210
+      Button_179: 1143341305
+      Button_18: 369162615
+      Button_180: 1332305928
+      Button_181: 2099702421
+      Button_182: -687655100
+      Button_183: -418363175
+      Button_184: 384794404
+      Button_185: -1021408536
+      Button_19: -701108912
+      Button_2: -913795702
+      Button_21: 955399409
+      Button_22: 1891137190
+      Button_23: 1494456607
+      Button_24: -1543802956
+      Button_25: -2013328865
+      Button_26: 1704487119
+      Button_27: 925147396
+      Button_28: 238227805
+      Button_29: -1742354903
+      Button_3: -2044577752
+      Button_30: 233883423
+      Button_31: 223248830
+      Button_32: -1399108700
+      Button_33: 858959310
+      Button_34: -759008574
+      Button_35: 38473058
+      Button_36: 299195413
+      Button_37: 192831662
+      Button_38: -1912159296
+      Button_39: 1691222103
+      Button_4: -1238833012
+      Button_40: 1650600256
+      Button_42: 412150165
+      Button_43: 1308754044
+      Button_44: -1906484511
+      Button_45: 1802900821
+      Button_46: -1984308378
+      Button_47: -2116899653
+      Button_48: 476676075
+      Button_5: -1276158159
+      Button_50: -1423342489
+      Button_51: 164399356
+      Button_52: -1275583569
+      Button_53: -1461716002
+      Button_54: 1628207501
+      Button_55: -943058017
+      Button_56: -1343997382
+      Button_57: -402074054
+      Button_58: -907072949
+      Button_59: 1331581711
+      Button_6: -1614467134
+      Button_60: -764498234
+      Button_61: -829875192
+      Button_62: 1726999456
+      Button_63: -1011853164
+      Button_64: 82781827
+      Button_65: -1551561196
+      Button_66: -403507321
+      Button_67: 1327148077
+      Button_68: -260781767
+      Button_69: 1826498649
+      Button_7: 1319408879
+      Button_70: -165344589
+      Button_71: -1408351413
+      Button_72: 2021108733
+      Button_73: 824040908
+      Button_75: 60019294
+      Button_76: -467459564
+      Button_77: 1824564960
+      Button_78: 1117596159
+      Button_79: 339257624
+      Button_80: 2144127685
+      Button_81: -691398093
+      Button_82: -827997799
+      Button_83: -2038224761
+      Button_84: -747125279
+      Button_85: -1152738612
+      Button_86: 292789079
+      Button_87: 1150162757
+      Button_88: -1089384895
+      Button_89: 1479759906
+      Button_9: -1794801340
+      Button_90: 2041507960
+      Button_91: 2038835506
+      Button_92: 1388335063
+      Button_93: 585177580
+      Button_94: 622360809
+      Button_95: 501311707
+      Button_96: 638359729
+      Button_97: 959802804
+      Button_98: -969096395
+      Button_99: 185039086
+      bgmgreen: 1310053689
+      bgmwhite: -1461850343
+      button: 1245585575
+      buttonBlue: 1838372510
+      check blue: -1615966893
+      home_blue: 781635742
+      options: 187947004
+      pause_white: 1379680249
+      restart: -515579293
+      restart green: -294275878
+      save: 60304912
+      sfxgreen: -1452421297
+      sfxwhite: 1881501636
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

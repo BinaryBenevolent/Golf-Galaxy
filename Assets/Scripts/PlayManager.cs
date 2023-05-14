@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayManager : MonoBehaviour
@@ -31,7 +32,6 @@ public class PlayManager : MonoBehaviour
     {
         isGoal = true;
         ballController.enabled = false;
-        // TODO player win window up
     }
 
     public void OnBallOutside()
@@ -61,5 +61,20 @@ public class PlayManager : MonoBehaviour
         rb.isKinematic = false;
         isBallOutside = false;
         isBallTeleporting = false;
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }
