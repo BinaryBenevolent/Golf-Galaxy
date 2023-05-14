@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class BallController : MonoBehaviour, IPointerDownHandler
@@ -15,6 +16,8 @@ public class BallController : MonoBehaviour, IPointerDownHandler
 
     [SerializeField] private Transform aimWorld;
 
+    [SerializeField] private int shootCount;
+
     private bool shoot;
 
     private bool isShootingMode;
@@ -27,6 +30,14 @@ public class BallController : MonoBehaviour, IPointerDownHandler
 
     public bool IsShootingMode { get => isShootingMode; }
     public float ForceFactor { get => forceFactor; }
+    public int ShootCount { get => shootCount; }
+
+    [SerializeField] private UnityEvent<int> OnShoot = new UnityEvent<int>();
+
+    private void Start()
+    {
+        shootCount = 0;
+    }
 
     private void Update()
     {
@@ -73,6 +84,10 @@ public class BallController : MonoBehaviour, IPointerDownHandler
 
                 aimLine.gameObject.SetActive(false);
                 aimWorld.gameObject.SetActive(false);
+
+                shootCount += 1;
+
+                OnShoot.Invoke(shootCount);
             }
         }
     }
