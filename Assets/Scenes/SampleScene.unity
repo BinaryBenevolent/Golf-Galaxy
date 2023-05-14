@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 400850699}
   - component: {fileID: 400850702}
   - component: {fileID: 400850701}
+  - component: {fileID: 400850703}
   m_Layer: 0
   m_Name: Aim World Visual
   m_TagString: Untagged
@@ -671,6 +672,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400850698}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &400850703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400850698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53721120de4b2524cbe412ab9cb169aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorStops: []
+  ball: {fileID: 1091414287}
+  arrowRenderer: {fileID: 400850701}
 --- !u!1001 &429826792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -820,7 +836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550676392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1301,6 +1317,15 @@ LineRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.19459455
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1333,8 +1358,8 @@ LineRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
+    numCornerVertices: 12
+    numCapVertices: 12
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -1619,6 +1644,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2128235126}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBallGoalEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634254068922745139, guid: d407bd3462a08484498265200ff64d02, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4390431199534071188, guid: d407bd3462a08484498265200ff64d02, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1982,7 +2035,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091414281}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2004,7 +2057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 1091414282}
   rb: {fileID: 1091414286}
-  force: 300
+  force: 200
+  aimLine: {fileID: 882207730}
   aimWorld: {fileID: 1442913701}
 --- !u!1 &1442913700
 GameObject:
@@ -2119,8 +2173,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626200983}
-  m_LocalRotation: {x: 0.2164184, y: 0.67314124, z: -0.21639498, w: 0.67321414}
-  m_LocalPosition: {x: -6.7887754, y: 0, z: 14.781853}
+  m_LocalRotation: {x: 0.21641843, y: 0.67314124, z: -0.216395, w: 0.67321414}
+  m_LocalPosition: {x: -6.7887745, y: 0, z: 14.781853}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2574,7 +2628,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976115119}
-  m_LocalRotation: {x: 0.080465674, y: -0.12471184, z: 0.01014794, w: 0.98887277}
+  m_LocalRotation: {x: 0.08046568, y: -0.124711856, z: 0.010147943, w: 0.98887277}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
