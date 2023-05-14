@@ -371,6 +371,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: button
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2402
+        width: 451
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f8e3b2ef1b18548953bf515ae542f5
+      internalID: 1379512858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonBlue
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2189
+        width: 178
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3795d05368ea4cb41d40c0463f941
+      internalID: 1838372510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: save
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 1231
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ff68a5dc24ba24f9bc34255ac1f5ae
+      internalID: 60304912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -382,7 +445,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Button_0: 1245585575
       Button_1: 555718810
       Button_10: 1793839301
       Button_100: -1056773411
@@ -560,12 +622,15 @@ TextureImporter:
       Button_99: 185039086
       bgmgreen: 1310053689
       bgmwhite: -1461850343
+      button: 1245585575
+      buttonBlue: 1838372510
       check blue: -1615966893
       home_blue: 781635742
       options: 187947004
       pause_white: 1379680249
       restart: -515579293
       restart green: -294275878
+      save: 60304912
       sfxgreen: -1452421297
       sfxwhite: 1881501636
   spritePackingTag: 
