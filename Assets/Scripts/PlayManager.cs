@@ -17,7 +17,6 @@ public class PlayManager : MonoBehaviour
     private bool isGoal;
 
     private Vector3 lastBallPosition;
-    private Quaternion lastCameraPosition;
 
     private void Update()
     {
@@ -34,7 +33,8 @@ public class PlayManager : MonoBehaviour
     {
         isGoal = true;
         ballController.enabled = false;
-        // TODO player win window up
+
+
     }
 
     public void OnBallOutside()
