@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayManager : MonoBehaviour
 {
@@ -33,8 +32,6 @@ public class PlayManager : MonoBehaviour
     {
         isGoal = true;
         ballController.enabled = false;
-
-
     }
 
     public void OnBallOutside()
@@ -64,11 +61,6 @@ public class PlayManager : MonoBehaviour
         rb.isKinematic = false;
         isBallOutside = false;
         isBallTeleporting = false;
-    }
-
-    public void ChangeScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
     }
 
     public void Exit()
