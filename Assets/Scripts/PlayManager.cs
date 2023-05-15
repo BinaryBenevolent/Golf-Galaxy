@@ -63,11 +63,6 @@ public class PlayManager : MonoBehaviour
         isBallTeleporting = false;
     }
 
-    public void Exit()
-    {
-        Application.Quit();
-    }
-
     public void PauseGame()
     {
         Time.timeScale = 0;
